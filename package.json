@@ -34,16 +34,16 @@
     "onCommand:extension.openInStash"
   ],
   "main": "./out/extension",
-  "properties": {
-    "openInStash.stashDomain": {
-      "type": [
-        "string"
-      ],
-      "default": "",
-      "description": "Configure a custom Stash domain."
-    }
-  },
   "contributes": {
+    "configuration": {
+      "openInStash.stashDomain": {
+        "type": [
+          "string"
+        ],
+        "default": "",
+        "description": "Configure a custom Stash domain."
+      }
+    },
     "commands": [
       {
         "command": "extension.openInStash",
